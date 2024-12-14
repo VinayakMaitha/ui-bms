@@ -1,14 +1,15 @@
-import Link from "next/link";
+import SchedulePage from "../app/schedule/page";
 
 export default function Home() {
   return (
-    <div>
-      <h1>CRUD Dashboard</h1>
-      <ul>
-        <li><Link href="/route">Manage Routes</Link></li>
-        {/* <li><Link href="/bus">Manage Buses</Link></li>
-        <li><Link href="/crew">Manage Crew</Link></li> */}
-      </ul>
-    </div>
+      
+      <div className="dashboard-layout">
+        <main className="dashboard-main">
+          <h1>Schedule Buses</h1>
+          <div className="schedule-placeholder">
+              <SchedulePage/>
+          </div>
+        </main>
+      </div>
   );
 }

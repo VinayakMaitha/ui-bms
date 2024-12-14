@@ -1,0 +1,145 @@
+/* Container to center content and provide spacing */
+.routeContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.routeHeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.routeHeaderContainer h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.routeCreateButton {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.routeCreateButton:hover {
+    background-color: #0056b3;
+}
+
+/* Route List Table */
+.routeListContainer table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.routeListContainer th, .routeListContainer td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.routeListContainer th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.routeListContainer tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.routeListContainer tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Modal Styling */
+.routeModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.routeModalContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.routeModalContent h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.routeModal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.routeModal label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.routeModal input[type="text"],
+.routeModal input[type="number"] {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.routeModal input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.routeModalActions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.routeModalActions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.routeModalActions button:first-child {
+    background-color: #007BFF;
+    color: white;
+}
+
+.routeModalActions button:first-child:hover {
+    background-color: #0056b3;
+}
+
+.routeModalActions button:last-child {
+    background-color: #f44336;
+    color: white;
+}
+
+.routeModalActions button:last-child:hover {
+    background-color: #d32f2f;
+}

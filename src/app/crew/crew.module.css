@@ -1,0 +1,148 @@
+/* Crew Container */
+.crewContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Header */
+.crewHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.crewTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.crewCreateButton {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.crewCreateButton:hover {
+  background-color: #0056b3;
+}
+
+/* Crew List Table */
+.crewListContainer table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.crewListContainer th,
+.crewListContainer td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.crewListContainer th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.crewListContainer tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.crewListContainer tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Modal */
+.crewModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.crewModalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.crewModalContent h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.crewModalContent form {
+  display: flex;
+  flex-direction: column;
+}
+
+.crewModalContent label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.crewModalContent input[type="text"],
+.crewModalContent input[type="number"] {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.crewModalContent input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.crewModalActions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.crewModalActions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.crewModalActions button:first-child {
+  background-color: #007BFF;
+  color: white;
+}
+
+.crewModalActions button:first-child:hover {
+  background-color: #0056b3;
+}
+
+.crewModalActions button:last-child {
+  background-color: #f44336;
+  color: white;
+}
+
+.crewModalActions button:last-child:hover {
+  background-color: #d32f2f;
+}
