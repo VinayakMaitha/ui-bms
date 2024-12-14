@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import { fetchBuses, createBus } from "../../services/busService"; // Add createBus API
 import styles from "./bus.module.css"; // Import CSS module
-import Navbar from "../../components/Navbar";
 
 // Create interface for buses
 interface Bus {
@@ -47,7 +46,7 @@ export default function ManageBuses() {
                 return;
             }
             // else create new bus
-            const res = await createBus(newBus); 
+            await createBus(newBus); 
 
             // reseting the form and closing the modal
             setNewBus({ registrationNumber: "", busType: "", depotId: "", active: false });

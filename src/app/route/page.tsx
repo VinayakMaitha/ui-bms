@@ -52,20 +52,9 @@ export default function ManageRoutes() {
     }
   };
 
-  const handleEditRoute = async (routeId: number) => {
-    // Here, you would send the route data to the backend API
-    // await api.editRoute(routeId, newRoute);
-    // fetchData();
-    // setIsModalOpen(false);
-    // setNewRoute({
-    //   name: "",
-    //   startPoint: "",
-    //   endPoint: "",
-    //   passengers: 0,
-    //   depotId: 0,
-    //   active: true
-    // });
-  };
+  // const handleEditRoute = async (routeId: number) => {
+    
+  // };
 
   const handleModalClose = () => {
     setIsModalOpen(false);

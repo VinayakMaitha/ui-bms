@@ -40,9 +40,9 @@ export default function ManageCrew() {
     }
   };
 
-  const handleEditCrew = async (crewId: number) => {
-    // edit data logic
-  };
+  // const handleEditCrew = async (crewId: number) => {
+  //   // edit data logic
+  // };
 
   const handleModalClose = () => {
     setIsModalOpen(false);

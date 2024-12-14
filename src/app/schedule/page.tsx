@@ -1,5 +1,4 @@
 // import React, { useState, useEffect } from 'react';
-import ScheduleForm from './components/ScheduleForm';
 import styles from './schedule.module.css';
 
 const SchedulePage = () => {
