@@ -1,0 +1,45 @@
+.scheduleContainer {
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  
+  .infoButtons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .submitButton,
+  .infoButton {
+    background-color: #0070f3;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .submitButton:hover,
+  .infoButton:hover {
+    background-color: #005bb5;
+  }
+  

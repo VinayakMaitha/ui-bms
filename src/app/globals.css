@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -12,10 +12,196 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* layout css */
+html, body {
+  height: 100%; /* Make sure the body takes the full viewport height */
+  margin: 0; /* Remove default margin */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.pageBody {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes full height of the screen */
+}
+
+main {
+  flex-grow: 1; /* Allow the main content to grow and take available space */
+}
+
+footer {
+  margin-top: auto; 
+  background-color: #1e293b; 
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+  font-size: 1rem;
+}
+/* layout css */
+
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f1f5f9; /* Light gray-blue background */
+  color: #1e293b; /* Navy blue text */
+  font-family: 'Arial', sans-serif;
+}
+
+/* NAVBAR css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e293b; /* Dark navy-blue background */
+  color: #ffffff; /* White text */
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky; /* Sticks to the top of the viewport */
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo a {
+  color: #38bdf8; /* Cyan color for the logo */
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-logo a:hover {
+  color: #0ea5e9; /* Slightly darker cyan on hover */
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  position: relative;
+}
+
+.navbar-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #38bdf8; /* Cyan hover effect */
+  transform: scale(1.1); /* Slight zoom-in on hover */
+}
+
+.navbar-links a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: #38bdf8;
+  transition: width 0.3s ease;
+  margin: 2px auto 0;
+}
+
+.navbar-links a:hover::after {
+  width: 100%; /* Underline expands fully on hover */
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .navbar-links a {
+    font-size: 1rem;
+  }
+}
+
+
+/* NAVBAR css */
+
+
+/* Dashboard Layout */
+.dashboard-layout {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+}
+
+
+/* Main Section */
+.dashboard-main {
+  flex: 1;
+  background-color: #ffffff; /* White background for content */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-main h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1e293b; /* Navy blue */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.schedule-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f5f9; /* Light gray-blue for consistency */
+  border: 2px dashed #94a3b8; /* Subtle border for schedule placeholder */
+  padding: 40px;
+  border-radius: 8px;
+  color: #64748b; /* Muted navy text */
+  font-size: 1.2rem;
+  text-align: center;
+  min-height: 300px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-header h1 {
+    font-size: 2rem;
+  }
+
+  .dashboard-main h2 {
+    font-size: 1.5rem;
+  }
+
+  .schedule-placeholder {
+    font-size: 1rem;
+    padding: 20px;
+    min-height: 200px;
+  }
 }
